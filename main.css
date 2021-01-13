@@ -26,6 +26,7 @@
 .key h1,p{
   color:#fff;
 }
+
 .key h1{
   padding:50px;
 }
@@ -33,13 +34,17 @@
   text-align: center;
   font-family : "serif";
   margin-bottom: 0px;
-  padding-bottom:80px;
-
+  padding-top: 60px;
 }
 .key span{
   color:#00FF3B;
 }
-
+.lead{
+  padding-bottom: 50px;
+}
+.skill {
+  padding-bottom: 250px;
+}
 .content1{
   text-align: center;
   background: rgba(51,59,80,0.5);
@@ -57,6 +62,43 @@
   line-height: 80px;
   padding: 60px;
 }
+.intro {
+  /* The image used */
+  background-image: url("pic5.jpg");
+  /* Full height
+  height 100% */
+  height:700px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.intro h1{
+  text-align: center;
+  color:#fff;
+  padding-top:100px;
+  font-family : "HiraKakuProN-W6";
+  font-size: 30px;
+}
+.intro h2{
+  text-align: left;
+  color:#fff;
+  padding-top:100px;
+  font-family : "HiraKakuProN-W6";
+  font-size: 30px;
+  margin-left: 20px;
+}
+.intro h3{
+  text-align:right;
+  color:#fff;
+  padding-top:100px;
+  font-family : "HiraKakuProN-W6";
+  font-size: 30px;
+  margin-right: 20px;
+}
+
 
 .about{
   /* The image used */
@@ -68,18 +110,47 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about h1{
-  color: #fff;
-  text-align: center;
-  font-family : "HiraKakuProN-W6";
-  padding: 50px;
-}
-.about_back{
+
+
+.gray_back{
   background: rgba(45,45,45, 0.5);
 }
-.about p{
-  color: #EEEEEE;
+.white_back{
+  background: rgba(255,255,255, 0.8);
+  width:300px;
+  margin:0 auto;
+  border-radius:2%;
 }
+.mypic{
+  margin: 0 auto;
+  opacity:0.8;
+  text-align: center;
+  padding-top:50px;
+  margin-bottom: 30px;
+}
+.mypic img{
+  border-radius: 50%;
+}
+.about h1{
+  font-size: 25px;
+  font-style:bold;
+  opacity:0.8;
+}
+.about h2{
+  font-size: 15px;
+  font-style:bold;
+  opacity:0.8;
+}
+.about p{
+  color:black;
+  opacity:0.8;
+}
+
+.prof{
+  text-align: center;
+
+}
+
 
 .experiences {
   /* The image used */
@@ -92,7 +163,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.experiences div h1{
+.experiences  h1{
   color: #fff;
   text-align: center;
   font-family : "HiraKakuProN-W6";
@@ -100,10 +171,15 @@
 }
 .experience{
   border-left: thick solid #00FF3B;
-  padding-left: 10px;
+
+}
+.ex1:hover{
+  transform: scale(1.02);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
 }
 .experience h{
   color:#00FF3B;
+
 }
 .experience p{
   color:	#EEEEEE	;
@@ -114,6 +190,7 @@
    line-height: 30px;
    padding:10px;
    margin-bottom: 100px;
+   border-radius: 2%;
 }
 .ex2{
   background: rgba(45,45,45, 0.6);
@@ -121,6 +198,7 @@
   line-height: 30px;
   padding:10px;
   margin-bottom: 100px;
+  border-radius: 2%;
 }
 .ex3{
   background: rgba(45,45,45, 0.6);
@@ -128,6 +206,7 @@
   line-height: 30px;
   padding:10px;
   margin-bottom: 100px;
+  border-radius: 2%;
 }
 .ex4{
   background: rgba(45,45,45, 0.6);
@@ -135,10 +214,97 @@
   line-height: 30px;
   padding:10px;
   margin-bottom: 100px;
+  border-radius: 2%;
 }
 .ex5{
   background: rgba(45,45,45, 0.6);
   margin-right: 30%;
   line-height: 30px;
   padding:10px;
+  border-radius: 2%;
+}
+.ex1:hover,.ex2:hover,.ex3:hover,.ex4:hover,.ex5:hover{
+  transform: scale(1.02);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+  background: rgba(45,45,45, 0.8);
+}
+
+
+
+
+/*  footer*/
+footer {
+  background: #222;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer h3 {
+ color: #0894d1;
+  letter-spacing: 1px;
+  margin: 30px 0 20px;
+}
+
+footer .three-column {
+ overflow: hidden;
+}
+
+footer .three-column li{
+ width: 33.3333%;
+  float: left;
+  padding: 5px 0;
+}
+
+footer .socila-list {
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+
+footer .socila-list li {
+  float: left;
+  margin-right: 3px;
+  opacity: 0.7;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .socila-list li:hover {
+  opacity: 1;
+}
+footer .copyright {
+  padding: 15px 0;
+  background: #333;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+footer .copyright span {
+  color: #0894d1;
+}
+.pull-left i{
+  font-size: 40px;
+}
+.contact p{
+  color: #EEEEEE;
+}
+/*transition*/
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
